@@ -1,6 +1,11 @@
+h1{
+    text-align: center;
+    color: #3f538f;
+}
+
 /*start slider*/
 #philadelphia{
-    height: 650px;
+    height: 800px;
     background-color: #EBEBEB;
 }
 
