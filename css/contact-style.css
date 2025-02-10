@@ -3,49 +3,77 @@ h1{
     color: #3f538f;
 }
 
-/*start slider*/
-#philadelphia{
-    height: 800px;
-    background-color: #EBEBEB;
+.linkedin{
+    width: 100%;
+    text-align: center;
 }
 
-.slide-wrapper{
-    width: 70%;
-    height: 70vh;
-    /*border: 1px solid green;*/
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    margin: 0 auto;
-    position: relative;
-    top: 50px;
+.github{
+    width: 100%;
+    text-align: center;
 }
 
-.slider{
-    margin: 0 10px 0 0; /*margin-right: 10px;*/
-    height: 100%;
-    width: 10%;
-    border-radius: 60px;
+.email{
+    width: 100%;
+    text-align: center;
+}
+
+.phone{
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.fa-linkedin{
+    font-size: 2rem;
     cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all ease-in-out 400ms;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    color: #333;
+    display: none;
 }
 
-.slider.active{
-    width: 50%;
-    border-radius: 50%;
-    animation: move-down 1.5s ease-in infinite alternate-reverse;
+.fa-github{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    display: none;
 }
 
-@keyframes move-down{
-    from{
-        transform: translateY(-15px);    
+.fa-envelope{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    display: none;
+}
+
+.fa-phone{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    display: none;
+}
+
+@media (max-width:850px) {
+    .slider.active{
+        border-radius: 20px;
     }
-    to{
-        transform: translateY(0);
+    .fa-linkedin{
+        display: block;
+        z-index: 1;
     }
+    .fa-github{
+        display: block;
+        z-index: 1;
+    }
+    .fa-envelope{
+        display: block;
+        z-index: 1;
+    }
+    .fa-phone{
+        display: block;
+        z-index: 1;
+    }
+    
 }
