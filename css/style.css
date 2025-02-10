@@ -114,3 +114,18 @@ header ul li a.btn:hover{
     border-bottom: none;
 }
 /*end dropdown*/
+
+.pic{
+    border: 1px solid green;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.photo{
+    text-align: center;
+    justify-content: center;
+}
