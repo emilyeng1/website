@@ -28,3 +28,10 @@ $(document).ready(function() {
         $('nav').toggleClass('nav-toggle');
     })
 })
+
+$(document).ready(function(){
+    $('.slider').click(function(){
+        var caption = $(this).data('caption');
+        $('#caption-text').text(caption);
+    });
+});
